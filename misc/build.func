@@ -629,6 +629,13 @@ advanced_settings() {
   fi
   echo -e "${SEARCH}${BOLD}${DGN}Verbose Mode: ${BGN}$VERB${CL}"
 
+    if (whiptail --backtitle "Proxmox VE Helper Scripts" --defaultno --title "AUTO UPDATE" --yesno "Enable Auto Update?" 10 58); then
+    AUTOUPDATE="yes"
+  else
+    AUTOUPDATE="no"
+  fi
+  echo -e "${INFO}${BOLD}${DGN}Auto Update Mode: ${BGN}$AUTOUPDATE${CL}"
+
   if (whiptail --backtitle "Proxmox VE Helper Scripts" --title "ADVANCED SETTINGS COMPLETE" --yesno "Ready to create ${APP} LXC?" 10 58); then
     echo -e "${CREATING}${BOLD}${RD}Creating a ${APP} LXC using the above advanced settings${CL}"
   else
@@ -785,6 +792,7 @@ build_container() {
   export app="$NSAPP"
   export PASSWORD="$PW"
   export VERBOSE="$VERB"
+  export AUTOUPDATE="$AUTOUPDATE"
   export SSH_ROOT="${SSH}"
   export SSH_AUTHORIZED_KEY="${SSH_AUTHORIZED_KEY}"
   export CTID="$CT_ID"

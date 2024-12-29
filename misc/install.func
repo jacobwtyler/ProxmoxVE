@@ -263,6 +263,11 @@ EOF
   echo "bash -c \"\$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/ct/${app}.sh)\"" >/usr/bin/update
   chmod +x /usr/bin/update
 
+  if [[ $AUTOUPDATE == "yes" ]]; then
+    touch /opt/autoupdate_lxc
+    echo "0 0 * * * /usr/bin/update" >/etc/cron.d/autoupdate_lxc
+  fi
+
   if [[ -n "${SSH_AUTHORIZED_KEY}" ]]; then
     mkdir -p /root/.ssh
     echo "${SSH_AUTHORIZED_KEY}" > /root/.ssh/authorized_keys
