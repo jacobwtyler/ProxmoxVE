@@ -1,8 +1,8 @@
 
 # **AppName<span></span>-install.sh Scripts**
- `AppName-install.sh` scripts found in the `/install` directory. These scripts are responsible for the installation of the Application. For this guide we take `/install/snipeit-install.sh` as example.
+ `AppName-install.sh` scripts found in the `/install` directory. These scripts are responsible for the installation of the application. For this guide we take `/install/snipeit-install.sh` as example.
 
-## 1. **File Header**
+## 1. **File header**
 
 ### 1.1 **Shebang**
 - Use `#!/usr/bin/env bash` as the shebang.
@@ -26,7 +26,7 @@ Example:
 > - Add your username
 > - When updating/reworking scripts, add "| Co-Author [YourUserName]"
 
-### 1.3 **Variables and Function import**
+### 1.3 **Variables and function import**
 - This sections adds the support for all needed functions and variables.
 ```bash
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
@@ -39,9 +39,9 @@ update_os
 ```
 ---
 
-## 2. **Variable Naming and Management**
+## 2. **Variable naming and management**
 
-### 2.1 **Naming Conventions**
+### 2.1 **Naming conventions**
 - Use uppercase names for constants and environment variables.
 - Use lowercase names for local script variables.
 
@@ -68,8 +68,8 @@ $STD apt-get install -y \
   nginx 
 ```
 
-### 3.2 **Collaps Dependencies**
-- Collaps dependencies to keep the Code readable.
+### 3.2 **Collapse dependencies**
+Collapse dependencies to keep the code readable.
 
 Example: <br>
 Use
@@ -83,26 +83,26 @@ php8.2-bcmath php8.2-common php8.2-ctype
 
 ---
 
-## 4. **Paths to applications**
-- If possible install the App and all nessesery files in `/opt/`
+## 4. **Paths to application files**
+If possible install the app and all necessary files in `/opt/`
 
 ---
 
-## 5. **Version Management**
+## 5. **Version management**
 
-### 5.1 **Install the latest Release**
-- Always try and install the latest Release if possibly
-- Do not hardcode any version if not absolutly nessesery
+### 5.1 **Install the latest release**
+- Always try and install the latest release
+- Do not hardcode any version if not absolutely necessary
 
-Example for a git Release:
+Example for a git release:
 ```bash
 RELEASE=$(curl -fsSL https://api.github.com/repos/snipe/snipe-it/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4) }')
 wget -q "https://github.com/snipe/snipe-it/archive/refs/tags/v${RELEASE}.zip"
 ```
 
-### 5.2 **Store the Version in a File for later Updates**
-- Write the installed Version into a file.
-- This is used for the Update function in app.sh to check if we need to update or not
+### 5.2 **Save the version for update checks**
+- Write the installed version into a file.
+- This is used for the update function in AppName.sh to check for updates
 
 Example:
 ```bash
@@ -110,9 +110,9 @@ echo "${RELEASE}" >"/opt/AppName_version.txt"
 ```
 ---
 
-## 6. **Input and Output Management**
+## 6. **Input and output management**
 
-### 6.1 **User Feedback**
+### 6.1 **User feedback**
 - Use standard functions like `msg_info` and `msg_ok` to print status messages.
 - Display meaningful progress messages at key stages.
 
@@ -152,19 +152,19 @@ sed -i -e "s|^DB_DATABASE=.*|DB_DATABASE=$DB_NAME|" \
 
 ---
 
-## 8. **Security Practices**
+## 8. **Security practices**
 
-### 8.1 **Password Generation**
-- Use secure tools (e.g., `openssl`) to generate random passwords.
-- Use only Alphanumeric Values to not introduce unknown behaviour.
+### 8.1 **Password generation**
+- Use `openssl` to generate random passwords.
+- Use only alphanumeric values to not introduce unknown behaviour.
 
 Example:
 ```bash
 DB_PASS=$(openssl rand -base64 18 | tr -dc 'a-zA-Z0-9' | head -c13)
 ```
 
-### 8.2 **File Permissions**
-- Explicitly set secure ownership and permissions for sensitive files.
+### 8.2 **File permissions**
+Explicitly set secure ownership and permissions for sensitive files.
 
 Example:
 ```bash
@@ -176,8 +176,8 @@ chmod -R 755 /opt/snipe-it
 
 ## 9. **Service Configuration**
 
-### 9.1 **Configuration Files**
-- Use `cat <<EOF` to write configuration files in a clean and readable way.
+### 9.1 **Configuration files**
+Use `cat <<EOF` to write configuration files in a clean and readable way.
 
 Example:
 ```bash
@@ -189,8 +189,9 @@ server {
 }
 EOF
 ```
-### 9.2 **Credential Management**
-- Store the generated credentials in a file
+### 9.2 **Credential management**
+Store the generated credentials in a file.
+
 Example:
 ```bash
 USERNAME=username
@@ -201,8 +202,10 @@ PASSWORD=$(openssl rand -base64 18 | tr -dc 'a-zA-Z0-9' | head -c13)
     echo "Password: $PASSWORD"
 } >> ~/application.creds
 ```
-### 9.3 **Enviromental Files**
-- Use `cat <<EOF` to write enviromental files in a clean and readable way.
+### 9.3 **Enviroment files**
+Use `cat <<EOF` to write enviromental files in a clean and readable way.
+
+Example:
 ```bash
 cat <<EOF >/path/to/.env
 VARIABLE="value"
@@ -212,7 +215,7 @@ EOF
 ```
 
 ### 9.4 **Services**
-- Enable affected services after configuration changes and start it right away.
+Enable affected services after configuration changes and start them right away.
 
 Example:
 ```bash
@@ -223,16 +226,16 @@ systemctl enable -q --now nginx
 
 ## 10. **Cleanup**
 
-### 10.1 **Remove Temporary Files**
-- Remove temporary files or unnecessary downloads after use.
+### 10.1 **Remove temporary files**
+Remove temporary files and downloads after use.
 
 Example:
 ```bash
 rm -rf /opt/v${RELEASE}.zip
 ```
 
-### 10.2 **Autoremove and Autoclean**
-- Clean up unused dependencies to reduce disk space usage.
+### 10.2 **Autoremove and autoclean**
+Remove unused dependencies to reduce disk space usage.
 
 Example:
 ```bash
@@ -255,8 +258,8 @@ apt-get -y autoclean
 
 ### Example: High-Level Script Flow
 
-1. **Dependencies Installation**
-2. **Database Setup**
-3. **Download and Configure Application**
-4. **Service Configuration**
-5. **Final Cleanup**
+1. Dependencies installation
+2. Database setup
+3. Download and configure application
+4. Service configuration
+5. Final cleanup

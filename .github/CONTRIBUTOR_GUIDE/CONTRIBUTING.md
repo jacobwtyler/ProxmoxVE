@@ -2,7 +2,7 @@
 # Community Scripts Contribution Guide
 
 ## **Welcome to the communty-scripts Repository!** 
-📜 These documents outlines the essential coding standards for all our scripts and JSON files. Adhering to these standards ensures that our codebase remains consistent, readable, and maintainable. By following these guidelines, we can improve collaboration, reduce errors, and enhance the overall quality of our project.
+📜 These documents outline the essential coding standards for all our scripts and JSON files. Adhering to these standards ensures that our codebase remains consistent, readable, and maintainable. By following these guidelines, we can improve collaboration, reduce errors, and enhance the overall quality of our project.
 
 ### Why Coding Standards Matter
 
@@ -15,11 +15,11 @@ Coding standards are crucial for several reasons:
 
 ### Scope of These Documents
 
-These documents covers the coding standards for the following types of files in our project:
+These documents cover the coding standards for the following types of files in our project:
 
-- **`APP-install.sh` Scripts**: These scripts are responsible for the installation of applications and are located in the `/install` directory.
-- **`APP.sh` Scripts**: These scripts handle the creation and updating of containers and are found in the `/ct` directory.
-- **JSON Files**: These files store structured data and are located in the `/json` directory.
+- **`install/$AppName-install.sh` Scripts**: These scripts are responsible for the installation of applications.
+- **`ct/$AppName.sh` Scripts**: These scripts handle the creation and updating of containers.
+- **`json/$AppName.json`**: These files store structured data and are used for the website.
 
 Each section provides detailed guidelines on various aspects of coding, including shebang usage, comments, variable naming, function naming, indentation, error handling, command substitution, quoting, script structure, and logging. Additionally, examples are provided to illustrate the application of these standards.
 
@@ -46,14 +46,14 @@ Before contributing, please ensure that you have the following setup:
 
 # 🚀 The Application Script (ct/AppName.sh)
 
-- You can find all coding standards, as well as the structure for this files [here](https://github.com/community-scripts/ProxmoxVE/blob/contributor_guide/.github/CONTRIBUTOR_GUIDE/ct/AppName.md).
-- These Scripts are responsible for container creation, setting the necessary variables and handles the update of the application.
+- You can find all coding standards, as well as the structure for this file [here](https://github.com/community-scripts/ProxmoxVE/blob/contributor_guide/.github/CONTRIBUTOR_GUIDE/ct/AppName.md).
+- These scripts are responsible for container creation, setting the necessary variables and handling the update of the application once installed.
 
 ---
 
 # 🛠 The Installation Script (install/AppName-install.sh)
 
-- You can find all coding standards, as well as the structure for this files [here](https://github.com/community-scripts/ProxmoxVE/blob/contributor_guide/.github/CONTRIBUTOR_GUIDE/install/AppName-install.md).
+- You can find all coding standards, as well as the structure for this file [here](https://github.com/community-scripts/ProxmoxVE/blob/contributor_guide/.github/CONTRIBUTOR_GUIDE/install/AppName-install.md).
 - These scripts are responsible for the installation of the application.
 
 ---
@@ -66,34 +66,34 @@ Start with the [template script](https://github.com/community-scripts/ProxmoxVE/
 
 ## 🤝 Contribution Process
 
-### 1. Fork the Repository
+### 1. Fork the repository
 Fork to your GitHub account
 
-### 2. Clone Your Fork on your Pc 
+### 2. Clone your fork on your local environment 
 ```bash
 git clone https://github.com/yourUserName/ForkName
 ```
 
-### 3. Create a New Branch
+### 3. Create a new branch
 ```bash
 git switch -c your-feature-branch
 ```
 
-### 4. Change Paths in build.func install.func and AppName.sh
-You need to switch `https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main` to `https://raw.githubusercontent.com/[USER]/[REPOSITORY]/refs/head/[BRANCH]` to test your script in your repository. Before opening a Pull Request change all this back to point to the community-scripts Repository.
+### 4. Change paths in build.func install.func and AppName.sh
+To be able to develop from your own branch you need to change `https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main` to `https://raw.githubusercontent.com/[USER]/[REPOSITORY]/refs/head/[BRANCH]`. This change is only for testing. Before opening a Pull Request you should change this line change all this back to point to `https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main`.
 
-### 4. Commit Changes (without build.func and install.func!)
+### 4. Commit changes (without build.func and install.func!)
 ```bash
 git commit -m "Your commit message"
 ```
 
-### 5. Push to Your Fork
+### 5. Push to your fork
 ```bash
 git push origin your-feature-branch
 ```
 
 ### 6. Create a Pull Request
-Open a PR from your feature branch to the main repository branch. You may only include your **AppName.sh**, **AppName-install.sh** and **AppName.json** files in the pull request.
+Open a Pull Request from your feature branch to the main repository branch. You must only include your **$AppName.sh**, **$AppName-install.sh** and **$AppName.json** files in the pull request.
 
 ---
 

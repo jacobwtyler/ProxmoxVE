@@ -1,5 +1,5 @@
 # **AppName<span></span>.sh Scripts**
- `AppName.sh` scripts found in the `/ct` directory. These scripts are responsible for the installation of the desired Application. For this guide we take `/ct/snipeit.sh` as example.
+ `AppName.sh` scripts found in the `/ct` directory. These scripts are responsible for the installation of the desired application. For this guide we take `/ct/snipeit.sh` as example.
 
 
 ## 1. **File Header**
@@ -11,18 +11,18 @@
 #!/usr/bin/env bash
 ```
 ### 1.2 **Import Functions**
-- Import the build.func File.
-- When developing your own Script, change the link to your own repository.
+- Import the build.func file.
+- When developing your own script, change the URL to your own repository.
 
 > [!CAUTION]
-> Before opening a Pull Request, change the link to point to the community-scripts repo.
+> Before opening a Pull Request, change the URL to point to the community-scripts repo.
 
 Example for development:
 ```bash
 source <(curl -s https://raw.githubusercontent.com/[USER]/[REPO]/refs/heads/[BRANCH]/misc/build.func)
 ```
 
-Example for final Script: 
+Example for final script: 
 ```bash
 source <(curl -s https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
 ```
@@ -44,13 +44,13 @@ Example:
 
 ---
 
-## 2 **Variables and Function import**
+## 2 **Variables and function import**
 > [!NOTE]
-> You need to have all this set in your Script, otherwise it will not work!
+> You need to have all this set in your script, otherwise it will not work!
 
 ### 2.1 **Default Values**
-- This sections sets the Default Values for the Container.
-- `APP` needs to be set to the Application name and must represent the filenames of your scripts.
+- This section sets the default values for the container.
+- `APP` needs to be set to the application name and must be equal to the filenames of your scripts.
 - `var_tags`: You can set Tags for the CT wich show up in the Proxmox UI. Don´t overdo it! 
 
 >[!NOTE]
@@ -78,7 +78,7 @@ var_version="12"
 var_unprivileged="1"
 ```
 
-## 2.2 **📋 App Output & Base Settings**
+## 2.2 **📋 App output & base settings**
 
 ```bash
 # App Output & Base Settings
@@ -89,7 +89,7 @@ base_settings
 - `header_info`: Generates ASCII header for APP
 - `base_settings`: Allows overwriting variable values
 
-## 2.3 **🛠 Core Functions**
+## 2.3 **🛠 Core functions**
 
 ```bash
 # Core
@@ -104,11 +104,11 @@ catch_errors
 
 ---
 
-## 3 **Update Function**
+## 3 **Update function**
 
 ### 3.1 **Function Header**
-- If applicable write a function wich updates the Application and the OS in the container.
-- Each update function starts with a standardised Header:
+- If applicable write a function that updates the application and the OS in the container.
+- Each update function starts with the same code:
 ```bash
 function update_script() {
   header_info
@@ -117,7 +117,7 @@ function update_script() {
 ```
 
 ### 3.2 **Check APP**
-- Befor doing anything updatewise, check if the App is installed in the Container.
+- Before doing anything update-wise, check if the app is installed in the container.
 
 Example:
 ```bash
@@ -126,9 +126,9 @@ if [[ ! -d /opt/snipe-it ]]; then
     exit
   fi
 ```
-### 3.3 **Check Version**
-- Befor updating, check if a new Version exists. 
-- For this we use the `${APPLICATION}_version.txt` file created in `/opt` during the install.
+### 3.3 **Check version**
+- Befoer updating, check if a new version exists. 
+  - We use the `${APPLICATION}_version.txt` file created in `/opt` during the install to compare new versions against the currently installed version.
 
 Example with a Github Release:
 ```bash
@@ -143,13 +143,13 @@ Example with a Github Release:
 }
 ```
 ### 3.4 **Verbosity**
-- Use the appropiate flag (**-q** in the examples) for a command to suppres its output.
+- Use the appropriate flag (**-q** in the examples) for a command to suppress its output.
 Example:
 ```bash
 wget -q
 unzip -q
 ```
-- If a command dose not come with such a functionality use `&>/dev/null` to suppress its output.
+- If a command does not come with this functionality use `&>/dev/null` to suppress it's output.
 
 Example:
 ```bash
@@ -158,10 +158,10 @@ php artisan config:clear &>/dev/null
 ```
 
 ### 3.5 **Backups**
-- Backup userdata if nessesary.
-- Move all userdata back in the Directory when the update is finnished.
+- Backup user data if necessary.
+- Move all user data back in the directory when the update is finished.
 >[!NOTE]
->This is not meant to be a permantent backup
+>This is not meant to be a permanent backup
 
 Example backup:
 ```bash
@@ -200,11 +200,11 @@ function update_script() {
 
 ---
 
-## 4 **End of the Script**
+## 4 **End of the script**
 - `start`: Launches Whiptail dialogue
 - `build_container`: Collects and integrates user settings
 - `description`: Sets LXC container description
-- With `echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"` you can point the user to the IP:PORT/folder needed to access the App.
+- With `echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"` you can point the user to the IP:PORT/folder needed to access the app.
 
 ```bash
 start
@@ -218,14 +218,14 @@ echo -e "${TAB}${GATEWAY}${BGN}http://${IP}${CL}"
 ```
 ---
 
-## 5. **Best Practices Checklist**
+## 5. **Contribution checklist**
 
 - [ ] Shebang is correctly set (`#!/usr/bin/env bash`).
 - [ ] Correct link to *build.func*
 - [ ] Metadata (author, license) is included at the top.
 - [ ] Variables follow naming conventions.
 - [ ] Update function exists.
-- [ ] Update functions checks if App is installed an for new Version.
+- [ ] Update functions checks if app is installed an for new version.
 - [ ] Update function up temporary files.
-- [ ] Script ends with a helpfull message for the User to reach the App.
+- [ ] Script ends with a helpful message for the user to reach the application.
 

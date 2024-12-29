@@ -1,5 +1,5 @@
 # **AppName<span></span>.json Files**
- `AppName.json` files found in the `/json` directory. These files are used to provide informations for the frontend. For this guide we take `/json/snipeit.json` as example.
+ `AppName.json` files found in the `/json` directory. These files are used to provide informations for the website. For this guide we take `/json/snipeit.json` as example.
 
- ## 1 **Json Generator**
- - To spare you some headache creating the json file, use the [Json-Editor](https://community-scripts.github.io/ProxmoxVE/json-editor)
+ ## 1. JSON Generator
+Use the [JSON Generator](https://community-scripts.github.io/ProxmoxVE/json-editor) to create this file for your application.
