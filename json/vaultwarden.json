@@ -11,7 +11,7 @@
     "interface_port": 8000,
     "documentation": null,
     "website": "https://www.vaultwarden.net/",
-    "logo": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-icon-white.svg",
+    "logo": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/dev_maxkeys/resources/vaultwarden-icon-white.svg",
     "description": "Vaultwarden is a self-hosted password manager which provides secure and encrypted password storage. It uses client-side encryption and provides access to passwords through a web interface and mobile apps.",
     "install_methods": [
         {

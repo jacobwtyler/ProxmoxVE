@@ -11,7 +11,7 @@
     "interface_port": 80,
     "documentation": null,
     "website": "https://gotify.net/",
-    "logo": "https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/main/assets/gotify.svg",
+    "logo": "https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/dev_maxkeys/assets/gotify.svg",
     "description": "Gotify is a simple server for sending and receiving messages",
     "install_methods": [
         {

@@ -1,7 +1,7 @@
 <div align="center">
   <p align="center">
     <a href="#">
-      <img src="https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/images/logo.png" height="100px" />
+      <img src="https://raw.githubusercontent.com/community-scripts/ProxmoxVE/dev_maxkeys/misc/images/logo.png" height="100px" />
     </a>
   </p>
 </div>
@@ -15,16 +15,16 @@
   <a href="https://helper-scripts.com">
     <img src="https://img.shields.io/badge/Website-4c9b3f?style=for-the-badge&logo=github&logoColor=white" alt="Website" />
   </a> 
-  <a href="https://github.com/community-scripts/ProxmoxVE/blob/main/.github/CONTRIBUTING.md">
+  <a href="https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/.github/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/Contribute-ff4785?style=for-the-badge&logo=git&logoColor=white" alt="Contribute" />
   </a> 
-  <a href="https://github.com/community-scripts/ProxmoxVE/blob/main/USER_SUBMITTED_GUIDES.md">
+  <a href="https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/USER_SUBMITTED_GUIDES.md">
     <img src="https://img.shields.io/badge/Guides-0077b5?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Guides" />
   </a> 
   <a href="https://discord.gg/UHrpNWGwkH">
     <img src="https://img.shields.io/badge/Discord-7289da?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a> 
-  <a href="https://github.com/community-scripts/ProxmoxVE/blob/main/CHANGELOG.md">
+  <a href="https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/CHANGELOG.md">
     <img src="https://img.shields.io/badge/Changelog-6c5ce7?style=for-the-badge&logo=git&logoColor=white" alt="Changelog" />
   </a>
 </p>
@@ -57,7 +57,7 @@ To install the Proxmox Helper Scripts, simply follow these steps:
 4. Open the Proxmox shell on your **main node**.
 5. Paste the command into the console, hit enter, and you are away! 🚀
 
-For detailed instructions, check out our [official guides](https://github.com/community-scripts/ProxmoxVE/blob/main/USER_SUBMITTED_GUIDES.md).
+For detailed instructions, check out our [official guides](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/USER_SUBMITTED_GUIDES.md).
 
 ---
 

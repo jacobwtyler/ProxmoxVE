@@ -1,6 +1,6 @@
 <div align="center">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/images/logo.png" height="100px" />
+    <img src="https://raw.githubusercontent.com/community-scripts/ProxmoxVE/dev_maxkeys/misc/images/logo.png" height="100px" />
  </a>
 </div>
 <h1 align="center">Changelog</h1>
@@ -737,9 +737,9 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **Recyclarr LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/recyclarr-install.sh)
+- **Recyclarr LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/recyclarr-install.sh)
   - NEW Script
-- **Wavelog LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/wavelog-install.sh)
+- **Wavelog LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/wavelog-install.sh)
   - NEW Script
 - **Vaultwarden LXC:** RAM has now been increased to 6144 MB [(PR)](https://github.com/community-scripts/ProxmoxVE/pull/285)
   - Breaking Change
@@ -749,9 +749,9 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **Bookstack LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/bookstack-install.sh)
+- **Bookstack LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/bookstack-install.sh)
   - NEW Script
-- **Vikunja LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/vikunja-install.sh)
+- **Vikunja LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/vikunja-install.sh)
   - NEW Script
 
 ## 2024-11-04
@@ -760,15 +760,15 @@ Do not break established syntax in this file, as it is automatically updated by 
 - **Automatic Update of Repository:** The update function now uses the new repository `community-scripts/ProxmoxVE` for Debian/Ubuntu LXC containers.
   
   ```bash
-  bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/update-repo.sh)"
+  bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/dev_maxkeys/misc/update-repo.sh)"
 
 ## 2024-10-31
 
 ### Changed
 
-- **NZBGet LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/nzbget-install.sh)
+- **NZBGet LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/nzbget-install.sh)
   - NEW Script
-- **Memos LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/memos-install.sh)
+- **Memos LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/memos-install.sh)
   - NEW Script
 
 ## 2024-10-27
@@ -782,7 +782,7 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **AdventureLog LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/adventurelog-install.sh)
+- **AdventureLog LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/adventurelog-install.sh)
   - NEW Script
 
 ## 2024-10-25
@@ -797,39 +797,39 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **Wallos LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/wallos-install.sh)
+- **Wallos LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/wallos-install.sh)
   - NEW Script
-- **Open WebUI LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/openwebui-install.sh)
+- **Open WebUI LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/openwebui-install.sh)
   - NEW Script
 
 ## 2024-10-19
 
 ### Changed
 
-- **Cockpit LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/cockpit-install.sh)
+- **Cockpit LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/cockpit-install.sh)
   - NEW Script
-- **Neo4j LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/neo4j-install.sh)
+- **Neo4j LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/neo4j-install.sh)
   - NEW Script
 
 ## 2024-10-18
 
 ### Changed
 
-- **ArchiveBox LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/archivebox-install.sh)
+- **ArchiveBox LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/archivebox-install.sh)
   - NEW Script
 
 ## 2024-10-15
 
 ### Changed
 
-- **evcc LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/evcc-install.sh)
+- **evcc LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/evcc-install.sh)
   - NEW Script
 
 ## 2024-10-10
 
 ### Changed
 
-- **MySQL LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/mysql-install.sh)
+- **MySQL LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/mysql-install.sh)
   - NEW Script
 - **Tianji LXC** [(Commit)](https://github.com/community-scripts/ProxmoxVE/commit/4c83a790ac9b040da1f11ad2cbe13d3fc5f480e9)
   - Breaking Change
@@ -848,16 +848,16 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **HomeBox LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/homebox-install.sh)
+- **HomeBox LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/homebox-install.sh)
   - NEW Script
-- **Zipline LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/zipline-install.sh)
+- **Zipline LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/zipline-install.sh)
   - NEW Script
 
 ## 2024-09-13
 
 ### Changed
 
-- **Tianji LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/tianji-install.sh)
+- **Tianji LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/tianji-install.sh)
   - NEW Script
 
 ## 2024-08-21
@@ -880,14 +880,14 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **lldap LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/lldap-install.sh)
+- **lldap LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/lldap-install.sh)
   - NEW Script
 
 ## 2024-07-26
 
 ### Changed
 
-- **Gitea LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/gitea-install.sh)
+- **Gitea LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/gitea-install.sh)
   - NEW Script
 
 ## 2024-06-30
@@ -901,9 +901,9 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **Kubo LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/kubo-install.sh)
+- **Kubo LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/kubo-install.sh)
   - NEW Script
-- **RabbitMQ LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/rabbitmq-install.sh)
+- **RabbitMQ LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/rabbitmq-install.sh)
   - NEW Script
 - **Scrutiny LXC**
   - Removed from website, broken.
@@ -919,27 +919,27 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **MySpeed LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/myspeed-install.sh)
+- **MySpeed LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/myspeed-install.sh)
   - NEW Script
 
 ## 2024-06-13
 
 ### Changed
 
-- **PeaNUT LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/peanut-install.sh)
+- **PeaNUT LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/peanut-install.sh)
   - NEW Script
 - **Website**
   - If the Changelog has changed recently, the link on the website will pulse.
-- **Spoolman LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/spoolman-install.sh)
+- **Spoolman LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/spoolman-install.sh)
   - NEW Script
 
 ## 2024-06-12
 
 ### Changed
 
-- **MeTube LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/metube-install.sh)
+- **MeTube LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/metube-install.sh)
   - NEW Script
-- **Matterbridge LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/matterbridge-install.sh)
+- **Matterbridge LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/matterbridge-install.sh)
   - NEW Script
 - **Website**
   - Reopen the gh-pages site (https://tteck.github.io/Proxmox/) 
@@ -948,14 +948,14 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **Zabbix LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/zabbix-install.sh)
+- **Zabbix LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/zabbix-install.sh)
   - NEW Script
 
 ## 2024-06-06
 
 ### Changed
 
-- **Petio LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/petio-install.sh)
+- **Petio LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/petio-install.sh)
   - NEW Script
 - **Website**
   - Important notices will now be displayed on the landing page.
@@ -964,7 +964,7 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 ### Changed
 
-- **FlareSolverr LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/main/install/flaresolverr-install.sh)
+- **FlareSolverr LXC** [(View Source)](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/install/flaresolverr-install.sh)
   - NEW Script
 
 ## 2024-05-31
@@ -1935,7 +1935,7 @@ Do not break established syntax in this file, as it is automatically updated by 
 
 - **InfluxDB LXC**
   - Choosing InfluxDB v1 will result in Chronograf being installed automatically.
-- **[User Submitted Guides](https://github.com/community-scripts/ProxmoxVE/blob/main/USER_SUBMITTED_GUIDES.md)**
+- **[User Submitted Guides](https://github.com/community-scripts/ProxmoxVE/blob/dev_maxkeys/USER_SUBMITTED_GUIDES.md)**
   -  Informative guides that demonstrate how to install various software packages using Proxmox VE Helper Scripts.
 
 ## 2023-04-14

@@ -9,9 +9,9 @@
     "updateable": true,
     "privileged": false,
     "interface_port": 8080,
-    "documentation": "https://github.com/glanceapp/glance/blob/main/docs/configuration.md",
+    "documentation": "https://github.com/glanceapp/glance/blob/dev_maxkeys/docs/configuration.md",
     "website": "https://github.com/glanceapp/glance",
-    "logo": "https://github.com/glanceapp/glance/blob/main/internal/assets/static/app-icon.png?raw=true",
+    "logo": "https://github.com/glanceapp/glance/blob/dev_maxkeys/internal/assets/static/app-icon.png?raw=true",
     "description": "A self-hosted dashboard that puts all your feeds in one place",
     "install_methods": [
       {

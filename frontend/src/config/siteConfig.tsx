@@ -18,7 +18,7 @@ export const navbarLinks = [
     text: "Discord",
   },
   {
-    href: `https://github.com/community-scripts/${basePath}/blob/main/CHANGELOG.md`,
+    href: `https://github.com/community-scripts/${basePath}/blob/dev_maxkeys/CHANGELOG.md`,
     event: "Change Log",
     icon: <Scroll className="h-4 w-4" />,
     text: "Change Log",

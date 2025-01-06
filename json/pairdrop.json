@@ -11,7 +11,7 @@
     "interface_port": 3000,
     "documentation": null,
     "website": "https://github.com/schlagmichdoch/PairDrop",
-    "logo": "https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/main/assets/pairdrop.svg",
+    "logo": "https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/dev_maxkeys/assets/pairdrop.svg",
     "description": "PairDrop: Local file sharing in your browser.",
     "install_methods": [
         {

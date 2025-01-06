@@ -11,7 +11,7 @@
     "interface_port": 53842,
     "documentation": null,
     "website": "https://github.com/Forceu/Gokapi",
-    "logo": "https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/main/assets/linux.svg",
+    "logo": "https://raw.githubusercontent.com/loganmarchione/homelab-svg-assets/dev_maxkeys/assets/linux.svg",
     "description": "Gokapi is a lightweight server to share files, which expire after a set amount of downloads or days.",
     "install_methods": [
         {

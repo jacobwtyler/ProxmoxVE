@@ -9,9 +9,9 @@
     "updateable": false,
     "privileged": false,
     "interface_port": null,
-    "documentation": "https://github.com/bluenviron/mediamtx/blob/main/README.md",
+    "documentation": "https://github.com/bluenviron/mediamtx/blob/dev_maxkeys/README.md",
     "website": "https://github.com/bluenviron/mediamtx",
-    "logo": "https://raw.githubusercontent.com/bluenviron/mediamtx/main/logo.png",
+    "logo": "https://raw.githubusercontent.com/bluenviron/mediamtx/dev_maxkeys/logo.png",
     "description": "MediaMTX is a ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy that allows you to read, publish, proxy, record and playback video and audio streams.",
     "install_methods": [
         {
